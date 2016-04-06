@@ -1,27 +1,75 @@
 <head>
-  <title>todolist</title>
+  <title>ToDolist</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
-  <h1 align="center">Welcome to ToDoList App</h1>
+    <h1>Welcome to ToDoList App</h1>
 
-  {{> hello}}
-  
-  <div class="container">
-    <div class="row">
-    <form class="col-xs-12 new-tweet">
-      <div class="form-group">
-        <input type="text" name="text" class="form-control"
-          placeholder="What thing do you want to remember to do?">
-      </div>
-      <hr>
-    </form>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+            <a href="#" class="navbar-brand">To Do List</a>
+            </div>
+          
+            <div class="pull-right">
+                <p>{{> loginButtons align="right"}}</p>
+            </div>
+
+        </div>
     </div>
-</div>
+  
+    <div class="container">
+        <div class="row">
+        <form class="col-xs-12 new-tweet">
+          <div class="form-group">
+            <input type="text" name="text" class="form-control"
+              placeholder="What thing do you want to remember to do?">
+          </div>
+        </form>
+        </div>
+        
+        <div class="row">
+            <label>Start Date:</label>
+            <input type="text" class="datepicker">
+            
+        </div>
+        
+        <div class="row">
+            <label>Start time:</label>
+            <form class="col-xs-12 new-tweet">
+              <div class="form-group">
+                <input type="text" name="text" class="form-control"
+                  placeholder="00:00">
+              </div>
+            </form>
+        </div>
+        
+        <div class="row">
+            <label>End Date:</label>
+            <input type="text" class="datepicker">
+            
+        </div>
+        
+        <div class="row">
+            <label>End time:</label>
+            <form class="col-xs-12 new-tweet">
+              <div class="form-group">
+                <input type="text" name="text" class="form-control"
+                  placeholder="00:00">
+              </div>
+            </form>
+        </div>
+        
+        <div class="row">
+            <button>Save</button>
+            <button>Cancel</button>
+        </div>
+        
+    </div>
 </body>
 
-<template name="hello">
+<template name="ToDoList">
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
 </template>

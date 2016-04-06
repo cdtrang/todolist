@@ -1,1 +1,8 @@
 /* CSS declarations go here */
+h1 {
+    color:blue;
+    text-align:center;
+    text-size:20;
+}
+
+#login-buttons { margin-top: 18px; }
